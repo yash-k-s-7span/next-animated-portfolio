@@ -39,11 +39,16 @@ const ContactForm = () => {
                 );
                 setSuccess(true);
                 resetForm();
+                console.log('success')
+
             } catch (err) {
                 setError(true);
+                console.log('catch')
             } finally {
                 setIsLoading(false);
                 setSubmitting(false);
+                console.log('finally')
+
             }
         },
     });
